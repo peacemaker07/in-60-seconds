@@ -1,5 +1,4 @@
-# Let's Get Started
-# Pythonと便利ガジェット 
+## Pythonと便利ガジェット 
 
 ---
 
@@ -58,6 +57,15 @@ ALTER TABLE "topic"
 ADD CONSTRAINT forum_id
 FOREIGN KEY ("forum_id")
 REFERENCES "forum" ("id");
+```
+```python
+# [プロジェクト名]/settings.py
+
+import django_heroku
+・・・
+DEBUG=False
+・・・
+django_heroku.settings(locals())
 ```
 
 @snap[south span-100 text-gray text-08]
